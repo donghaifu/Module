@@ -23,7 +23,7 @@ namespace TreeView
         private void getSaleList()
         {
             SqlConnection cn = new SqlConnection(Properties.Settings.Default.HarvestConnectionString);
-            string sql = " SELECT No,AssembleNo,NextLevel,NextLevelName FROM TempTable WHERE SalesNo ='10001' ORDER BY LEVEL";
+            string sql = " SELECT No,AssembleNo,NextLevel,NextLevelName FROM TempTable WHERE SalesNo ='10001' ";
             //where  AssembleNo LIKE '__0__' AND LevelHigh = '是' ORDER BY AssembleNo 
             SqlDataAdapter da = new SqlDataAdapter(sql, cn);
 
@@ -31,12 +31,15 @@ namespace TreeView
             da.Fill(ds, "SalesList");
             cn.Close();
             dgvSalesList.DataSource = ds.Tables["SalesList"];
-            //treeView1.Nodes
             TreeNodeCollection tnc = treeView1.Nodes;
-            TreeNode tn = new TreeNode();
-            treeView1.Nodes.Add(tn);//将该节点加入到TreeView中
-            //BindTreeViewN(ds.Tables["SalesList"], tnc, "10001", "NextLevel", "AssembleNo", "NextLevelName");
-            Bind_Tv(ds.Tables["SalesList"], tn, "10001", "NextLevel", "AssembleNo", "NextLevelName");
+            BindTreeViewN(ds.Tables["SalesList"], tnc, "10001", "NextLevel", "AssembleNo", "NextLevelName");
+
+
+
+            //TreeNode tn = new TreeNode();
+            //treeView1.Nodes.Add(tn);//将该节点加入到TreeView中
+
+            //Bind_Tv(ds.Tables["SalesList"], tn, "10001", "NextLevel", "AssembleNo", "NextLevelName");
             //BindTreeView(ds.Tables["SalesList"], tnc, 1, "No" ,"NextLevel", "AssembleNo", "NextLevelName");
         }
 
@@ -64,10 +67,10 @@ namespace TreeView
                 tn.Text = row[text].ToString();
                 //if (pid_val != "10001")
                 p_Node.Nodes.Add(tn);
-                TreeNode string(row[pid]) = new TreeNode();
+                //TreeNode string(row[pid]) = new TreeNode();
             }
 
-            }
+        }
         
 
 

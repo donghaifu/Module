@@ -7,3 +7,12 @@ F:\kuaipan\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.csproj.GenerateRe
 F:\kuaipan\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.exe
 F:\kuaipan\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.pdb
 F:\kuaipan\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.csprojResolveAssemblyReference.cache
+E:\Git\Module\TreeView\TreeView\bin\Debug\TreeView.exe.config
+E:\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.exe
+E:\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.pdb
+E:\Git\Module\TreeView\TreeView\bin\Debug\TreeView.exe
+E:\Git\Module\TreeView\TreeView\bin\Debug\TreeView.pdb
+E:\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.csprojResolveAssemblyReference.cache
+E:\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.Form1.resources
+E:\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.Properties.Resources.resources
+E:\Git\Module\TreeView\TreeView\obj\x86\Debug\TreeView.csproj.GenerateResource.Cache
