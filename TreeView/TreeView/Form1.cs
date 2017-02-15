@@ -132,5 +132,51 @@ namespace TreeView
         }
 
 
+        //点击按钮开始遍历treeview,查找对应节点
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //treeView1.BackColor = Color.White;  不好使啊
+            treeView1.CollapseAll();//全部收起
+            PrintTreeViewNode(treeView1.Nodes);
+        }
+
+        //迭代查找
+        public void PrintTreeViewNode(TreeNodeCollection node)
+        {
+            foreach (TreeNode n in node)
+            {
+                if (n.Name == textBox1.Text)
+                {
+                    //n.Expand(); 自我展开没有必要
+                    n.BackColor = Color.LightBlue;//匹配的背景色为蓝色
+                    ExpandParentNodes(n.Parent.Nodes);//迭代展开父节点
+                }
+                else
+                {
+                    n.BackColor = Color.White;//不匹配的背景色为白色
+                }
+                PrintTreeViewNode(n.Nodes);//迭代
+            }
+        }
+
+        //迭代展开父节点
+        private void ExpandParentNodes(TreeNodeCollection tnodes)
+        {
+            TreeNode parentNode;
+            foreach (TreeNode node in tnodes)
+            {
+                parentNode = node;
+                if (parentNode.Parent != null)
+                {
+                    parentNode.Parent.Expand();
+                    if (parentNode.Parent.Parent != null)//判断父节点的父节点是否为空，如果已经达到根节点就是null
+                    {
+                        ExpandParentNodes(parentNode.Parent.Parent.Nodes);
+                    }
+                    else
+                        break;//已经达到根节点，退出
+                }
+            }
+        }
     }
 }

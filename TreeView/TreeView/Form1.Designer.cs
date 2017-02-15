@@ -36,6 +36,8 @@
             this.SalesNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SalesName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.下级名称 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalesList)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,12 +61,12 @@
             this.SalesNo,
             this.SalesName,
             this.下级名称});
-            this.dgvSalesList.Location = new System.Drawing.Point(527, 23);
+            this.dgvSalesList.Location = new System.Drawing.Point(527, 93);
             this.dgvSalesList.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvSalesList.Name = "dgvSalesList";
             this.dgvSalesList.ReadOnly = true;
             this.dgvSalesList.RowTemplate.Height = 23;
-            this.dgvSalesList.Size = new System.Drawing.Size(776, 566);
+            this.dgvSalesList.Size = new System.Drawing.Size(776, 496);
             this.dgvSalesList.TabIndex = 20;
             // 
             // 序号
@@ -107,17 +109,37 @@
             this.下级名称.ReadOnly = true;
             this.下级名称.Width = 92;
             // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(527, 43);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(131, 25);
+            this.textBox1.TabIndex = 21;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(700, 45);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 22;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1330, 615);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dgvSalesList);
             this.Controls.Add(this.treeView1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalesList)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -129,6 +151,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SalesNo;
         private System.Windows.Forms.DataGridViewTextBoxColumn SalesName;
         private System.Windows.Forms.DataGridViewTextBoxColumn 下级名称;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
