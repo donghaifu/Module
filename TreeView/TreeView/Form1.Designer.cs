@@ -43,7 +43,7 @@
             // 
             this.treeView1.Location = new System.Drawing.Point(38, 23);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(346, 558);
+            this.treeView1.Size = new System.Drawing.Size(441, 558);
             this.treeView1.TabIndex = 0;
             // 
             // dgvSalesList
@@ -59,20 +59,22 @@
             this.SalesNo,
             this.SalesName,
             this.下级名称});
-            this.dgvSalesList.Location = new System.Drawing.Point(405, 23);
+            this.dgvSalesList.Location = new System.Drawing.Point(527, 23);
             this.dgvSalesList.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dgvSalesList.Name = "dgvSalesList";
             this.dgvSalesList.ReadOnly = true;
             this.dgvSalesList.RowTemplate.Height = 23;
-            this.dgvSalesList.Size = new System.Drawing.Size(809, 566);
+            this.dgvSalesList.Size = new System.Drawing.Size(776, 566);
             this.dgvSalesList.TabIndex = 20;
             // 
             // 序号
             // 
+            this.序号.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.序号.DataPropertyName = "No";
             this.序号.HeaderText = "序号";
             this.序号.Name = "序号";
             this.序号.ReadOnly = true;
+            this.序号.Width = 62;
             // 
             // SalesNo
             // 
@@ -98,16 +100,18 @@
             // 
             // 下级名称
             // 
+            this.下级名称.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.下级名称.DataPropertyName = "NextLevelName";
             this.下级名称.HeaderText = "下级名称";
             this.下级名称.Name = "下级名称";
             this.下级名称.ReadOnly = true;
+            this.下级名称.Width = 92;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1273, 615);
+            this.ClientSize = new System.Drawing.Size(1330, 615);
             this.Controls.Add(this.dgvSalesList);
             this.Controls.Add(this.treeView1);
             this.Name = "Form1";
