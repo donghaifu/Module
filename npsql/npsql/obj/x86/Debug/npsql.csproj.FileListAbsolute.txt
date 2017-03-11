@@ -1,0 +1,7 @@
+C:\Users\Administrator\Desktop\test\npsql\npsql\obj\x86\Debug\npsql.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\test\npsql\npsql\bin\Debug\npsql.exe.config
+C:\Users\Administrator\Desktop\test\npsql\npsql\bin\Debug\npsql.exe
+C:\Users\Administrator\Desktop\test\npsql\npsql\bin\Debug\npsql.pdb
+C:\Users\Administrator\Desktop\test\npsql\npsql\obj\x86\Debug\npsql.exe
+C:\Users\Administrator\Desktop\test\npsql\npsql\obj\x86\Debug\npsql.pdb
+C:\Users\Administrator\Desktop\test\npsql\npsql\bin\Debug\Mono.Security.dll
